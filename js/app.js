@@ -19,8 +19,17 @@ document.addEventListener('DOMContentLoaded', function() {
     dropdown.style.display = "none";
     });
 
-});
-
-
-
-
+    
+    
+    var buttons = document.querySelectorAll('.read-more');
+    console.log(buttons);
+    console.log(buttons[0].previousElementSibling); 
+    
+    buttons[0].addEventListener('click', function() {
+      console.log('działa', this); // To powinnaś zobaczyć w konsoli po kliknięciu w pierwszy przycisk
+    });
+    
+   
+    
+        
+    });
